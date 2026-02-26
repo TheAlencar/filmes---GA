@@ -14,6 +14,11 @@ fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', {
         const container = document.getElementById("featuredMovies")
         //container.innerHTML =''
 
+        function formateDate(dateString) {
+            const [year,month,day] = dateString.split(`-`);
+            return `${day}/${month}/${year}`
+        }
+
         const cardMovies = data.results.map(function (i) {
         const card = `
             <div class="col-6 col-sm-4 col-md-3 mb-4">
@@ -22,7 +27,7 @@ fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', {
                          class="card-img-top" alt="${i.title}">
                     <div class="card-body movie-info">
                         <h5 class="movie-title" style="font-size: 1rem;">${i.title}</h5>
-                        <p class="move-date">${i.release_date}</p>
+                        <p class="move-date">${formateDate(i.release_date)}</p>
                     </div>
                 </div>
             </div>`;
