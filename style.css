@@ -38,14 +38,6 @@ body, html {
   }
   
   /* Cards */
-  .card {
-    background-color: #1c2b3a;
-    border: none;
-    color: white;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-  }
-  
   .card:hover {
     transform: scale(1.03);
   }
@@ -71,35 +63,6 @@ body, html {
     color: #ccc;
   }
   
-  /* Carousel */
-/*   .carousel-item img {
-    max-height: 450px;
-    object-fit: cover;
-    width: 100%;
-    filter: brightness(0.85);
-    border-radius: 8px;
-  }
-  
-  .carousel-caption {
-    background: rgba(0,0,0,0.5);
-    border-radius: 8px;
-    padding: 1rem;
-  } */
-
-  /* CARD INICIAL */
-  /* .card:hover {
-    transform: scale(1.03);
-    transition: transform 0.2s ease-in-out;
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
-  }
-  .card-title {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  .card-text {
-    font-size: 0.9rem;
-  } */
-
 
   .movie-card {
     position: relative;
